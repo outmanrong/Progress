@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import InputTextField from './InputTextField';
+import BasicForm from './BasicForm';
 import './index.css';
 
 ReactDOM.render(
-  <InputTextField value='asdf'/>,
+  <BasicForm />,
   document.getElementById('root')
 );

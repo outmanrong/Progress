@@ -10,7 +10,7 @@ class InputTextField extends Component{
 	render(){
 		return (
 			<div>
-				<input type='text' size='33' defaultValue={this.props.value}/>
+				<input type='text' size='10' defaultValue={this.props.value}/>
 			</div>
 		);
 	}
