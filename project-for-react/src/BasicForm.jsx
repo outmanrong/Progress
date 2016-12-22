@@ -14,10 +14,12 @@ class BasicForm extends Component {
 	}
 
 	render(){
+		let label = { labelTitle: 'Name: ', labelText: 'Test for react'};
+		let input = { labelTitle: 'Text to fill: ', value:'asdf', name: this.inputTextId, onBlur: this.handleBlur };
 		return (
 			<div>
-				<BasicLabel labelTitle='Name: ' labelText='Test for react'/>
-				<InputTextField labelTitle='Text to fill: ' value='asdf' name={this.inputTextId} onBlur={this.handleBlur}/>
+				<BasicLabel {...label} />
+				<InputTextField {...input} />
 			</div>
 		);
 	}
